@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Apps by Bastian Grupe</title>
+<link rel="stylesheet" href="../site.css">
+<link rel="alternate" hreflang="de" href="../de/privacy.html">
+</head>
+<body>
+<header>
+<p class="lang"><a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a></p>
+<h1>Privacy Policy</h1>
+<p class="meta">Apps by Bastian Grupe · Last updated: 14 November 2026</p>
+</header>
+<main>
+<nav class="toc" aria-label="Contents">
+<ul>
+<li><a href="#controller">Who is responsible</a></li>
+<li><a href="#summary">The short version</a></li>
+<li><a href="#apple">Data processed by Apple</a></li>
+<li><a href="#contact">Contacting me</a></li>
+<li><a href="#website">This website</a></li>
+<li>Apps:
+  <a href="#airportcontrol">AirportControl</a> ·
+  <a href="#carmanager">CarManager</a> ·
+  <a href="#healthmanager">HealthManager</a> ·
+  <a href="#homemonitor">HomeMonitor</a> ·
+  <a href="#silverbox">Silverbox</a> ·
+  <a href="#weerelay">WeeRelay</a></li>
+<li><a href="#rights">Your rights</a></li>
+<li><a href="#changes">Children and changes</a></li>
+</ul>
+</nav>
+
+<h2 id="controller">Who is responsible</h2>
+<p>Bastian Grupe develops and publishes these apps as a private individual.<br>
+Email: <a href="mailto:bgrupe@gmail.com">bgrupe@gmail.com</a></p>
+
+<h2 id="summary">The short version</h2>
+<ul>
+<li>None of the apps contains analytics, advertising, tracking or third-party SDKs.</li>
+<li>I do not run a server for any of the apps. The apps send me no data, and I have no access to what you store in them.</li>
+<li>Your data stays on your device, in your own private iCloud (CarManager only), or goes to servers you set up yourself (HomeMonitor and WeeRelay, optional).</li>
+<li>Diagnostic messages go only to the system log on your device. Personal content in them is marked private.</li>
+</ul>
+<p>The sections for each app below describe exactly what is stored and transmitted.</p>
+
+<h2 id="apple">Data processed by Apple</h2>
+<p>The apps are distributed through Apple’s App Store. Apple processes the data needed for downloads, purchases and updates under its own privacy policy. I receive no personal data from Apple about who downloads an app.</p>
+<p>If you have allowed sharing with app developers in your device’s analytics settings, Apple may send me crash reports and aggregated usage statistics through App Store Connect. They do not identify you to me. You can turn this off at any time in your device’s privacy settings.</p>
+<p>Where an app uses iCloud, Apple stores that data in your iCloud account under Apple’s privacy policy.</p>
+
+<h2 id="contact">Contacting me</h2>
+<p>If you email me, I process your email address, your name if you give it, and the content of your message to answer your request. The legal basis is Art. 6(1)(b) GDPR for requests about an app you use, otherwise Art. 6(1)(f) GDPR (my legitimate interest in answering inquiries). I delete the correspondence when your request is resolved, unless the law requires me to keep it.</p>
+<p>Please do not send me health data, photos, catalog or app exports, passwords or tokens unless I explicitly ask for them to solve a problem.</p>
+
+<h2 id="website">This website</h2>
+<p>This website is hosted by GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). When you open a page, GitHub processes your IP address and technical request data in server logs to deliver the page and keep the service secure. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. GitHub is certified under the EU-U.S. Data Privacy Framework. The legal basis is Art. 6(1)(f) GDPR (my legitimate interest in providing support and privacy information).</p>
+<p>This website uses no cookies, no scripts, no analytics and no external fonts.</p>
+
+<h2 id="airportcontrol">AirportControl</h2>
+<p>An arcade game in which you guide aircraft to their runways.</p>
+<ul>
+<li><strong>Stored on your device:</strong> your high scores (score, airfield, date and length of the game) and the setting for approach guides.</li>
+<li><strong>Transmitted:</strong> nothing. The app makes no network connections and uses neither iCloud nor Game Center.</li>
+<li><strong>Permissions:</strong> none.</li>
+<li><strong>Demo mode</strong> uses sample scores kept in memory only.</li>
+<li><strong>Deleting your data:</strong> on iPhone and iPad, deleting the app removes its data. On a Mac, also delete the folder <code>~/Library/Containers/me.bgrupe.AirportControl</code>.</li>
+</ul>
+
+<h2 id="carmanager">CarManager</h2>
+<p>A cost book for your vehicles.</p>
+<ul>
+<li><strong>Stored:</strong> the data you enter — vehicles (name, make, model, year, licence plate, purchase or leasing details), fuel entries, purchases and running costs with your notes, and leasing contracts. The app keeps them on your device and also remembers locally which vehicle you last selected.</li>
+<li><strong>iCloud:</strong> the app syncs your data between your devices through the private database of your own iCloud account (CloudKit). Only you can access it; I cannot. If you are not signed in to iCloud, the data stays on the device.</li>
+<li><strong>Spotlight and Siri:</strong> the vehicle name, make and model are added to the search index on your device so you can find a vehicle and open it with Siri or Shortcuts. Licence plates and costs are not indexed.</li>
+<li><strong>Import and export:</strong> an export is a JSON file containing all data of the chosen vehicles, including licence plates and notes. It is not encrypted. You choose where it is saved; if you put it on a cloud drive or share it, that service or recipient processes it. Imports read only the file you choose.</li>
+<li><strong>Permissions:</strong> none.</li>
+<li><strong>Demo mode</strong> uses invented sample data kept in memory only. It is never synced or indexed.</li>
+<li><strong>Deleting your data:</strong> delete single entries, a vehicle (Settings › Delete This Vehicle) or everything (Settings › Data Management › Delete All Data). Deletions are synced to iCloud. Deleting the app removes only the local copy; to remove the iCloud copy, delete the CarManager data in your device’s iCloud storage settings.</li>
+</ul>
+
+<h2 id="healthmanager">HealthManager</h2>
+<p>A Mac app that turns your Apple Health export into monthly and yearly comparisons.</p>
+<ul>
+<li><strong>Reading:</strong> the app reads the Apple Health XML file you choose or drop into the window, without changing it. It has no direct access to HealthKit or iCloud.</li>
+<li><strong>Stored on your Mac:</strong> daily values, source names (devices and apps that recorded the data) and the name of the imported file, in a database inside the app’s container. During an import, samples are staged in temporary files that are removed afterwards. A successful new import replaces the previous data; a failed or cancelled import keeps it. The app does not encrypt its database itself; protection depends on your Mac’s disk encryption.</li>
+<li><strong>Transmitted:</strong> nothing. The app has no network access.</li>
+<li><strong>Exports:</strong> CSV and JSON exports contain dates, values, units and source names; the HTML report contains comparisons for all metrics. You choose where they are saved.</li>
+<li><strong>Permissions:</strong> none apart from access to files you choose.</li>
+<li><strong>Demo mode</strong> contains only invented data and never opens your saved data.</li>
+<li><strong>Deleting your data:</strong> delete the folder <code>~/Library/Containers/me.bgrupe.HealthManager</code>, and separately any XML files, exports and backups you no longer need. Removing the app alone leaves this data behind.</li>
+</ul>
+
+<h2 id="homemonitor">HomeMonitor</h2>
+<p>An app for iPhone, iPad and Mac that shows and controls your HomeKit home, optionally with Home Assistant and a Viessmann heating system.</p>
+<h3>HomeKit</h3>
+<ul>
+<li>With your permission the app reads your primary home: rooms, accessory names, sensor values (for example temperature, humidity, air quality, motion, contact, smoke, leaks), device states, battery levels, scenes and automations.</li>
+<li>It changes devices and runs scenes only when you tell it to.</li>
+<li>HomeKit data is not sent to me or to any third party.</li>
+</ul>
+<h3>Stored on your device</h3>
+<ul>
+<li>The accessory list, your alert limits and favourites, battery history (kept 3, 6 or 12 months), and an event log of alerts and home events such as motion, door contacts and security system changes (kept 7 to 90 days). The event log can reveal when people are at home; it never leaves your device.</li>
+<li>Names of AirPlay speakers and TVs found on your local network.</li>
+<li>Readings and scene names for the widget and the scene control, in a container that only the app and its widget can read.</li>
+<li>The Home Assistant token and Viessmann sign-in tokens are kept in the Keychain on this device only and are not synced.</li>
+</ul>
+<h3>Home Assistant (optional)</h3>
+<ul>
+<li>The app connects directly to the Home Assistant server you enter, using your access token. It reads device states and sends the control commands you trigger.</li>
+<li>Use an <code>https://</code> address. With <code>http://</code>, your token and data travel unencrypted on your network.</li>
+</ul>
+<h3>Viessmann (optional)</h3>
+<ul>
+<li>You sign in on Viessmann’s own sign-in page in your browser. The privacy policy of Viessmann Climate Solutions applies there.</li>
+<li>The app then fetches your installation’s heating values, consumption and burner statistics from the Viessmann API and sends the heating commands you trigger. Temperature snapshots are kept 7 to 90 days. Consumption and burner statistics are kept until you delete the app.</li>
+<li>“Disconnect” deletes the sign-in tokens. The client ID you entered stays until you clear the field; collected history stays as well.</li>
+</ul>
+<h3>Other features</h3>
+<ul>
+<li><strong>Notifications</strong> are created on your device and show room names, accessory names and values.</li>
+<li>The <strong>home summary</strong> is written by Apple Intelligence on your device.</li>
+<li><strong>Permissions:</strong> HomeKit, local network (to find AirPlay devices and reach Home Assistant) and notifications. On a Mac you can also let the app open at login.</li>
+<li><strong>Demo mode</strong> uses invented data, asks for no permissions and contacts no server.</li>
+</ul>
+<h3>Deleting your data</h3>
+<ul>
+<li>Clear the event log and battery history in the app, and delete accessories you no longer need.</li>
+<li>Before deleting the app, disconnect Viessmann and clear the Home Assistant token field: Keychain entries can outlast the app.</li>
+<li>Deleting the app removes the rest of its data. On a Mac, also delete its folders in <code>~/Library/Containers</code> and <code>~/Library/Group Containers</code>.</li>
+</ul>
+
+<h2 id="silverbox">Silverbox</h2>
+<p>A Mac photo catalog for your own photo folders.</p>
+<ul>
+<li><strong>Reading:</strong> after you add a folder, the app reads image files and their embedded or sidecar metadata, and watches the folder for changes.</li>
+<li><strong>Stored on your Mac:</strong> in a catalog inside the app’s container — file paths, file sizes and dates, volume and folder identifiers, camera and exposure details, capture dates, ratings, flags, colour labels, titles, captions, keywords, collections, permissions for the folders you chose, and your display settings. Previews are kept in memory only.</li>
+<li><strong>Files:</strong> image files are never changed. Only the explicit command to save metadata writes XMP sidecar files next to supported RAW files; they contain your ratings, labels, titles, captions and keywords and stay there when you remove the app.</li>
+<li><strong>Backups:</strong> a catalog backup contains metadata, file paths and folder permissions, but no images. You choose where it is saved. Before a restore, the app saves a safety copy of a readable current catalog in its container and keeps previous catalog databases.</li>
+<li><strong>Transmitted:</strong> nothing. The app has no network access and no iCloud sync.</li>
+<li><strong>Demo mode</strong> uses bundled sample images and an in-memory catalog; it never reads or writes your catalog or folders.</li>
+<li><strong>Deleting your data:</strong> removing a folder from the catalog removes its records, not the original files. To remove everything, delete <code>~/Library/Containers/me.bgrupe.Silverbox</code>, plus any exported backups and XMP sidecars you no longer want.</li>
+</ul>
+
+<h2 id="weerelay">WeeRelay</h2>
+<p>A Mac and iPad client for a WeeChat relay that you run yourself. WeeRelay is not a chat service.</p>
+<h3>Stored on your device</h3>
+<ul>
+<li>The relay address, the fingerprint of a certificate you trusted, display and notification settings (including the names of muted conversations and the last opened conversation), image upload settings (server address and user name) and, if you chose one, a copy of your chat background image.</li>
+<li>The relay password and the upload password are kept in the Keychain on this device and are not synced. If you let the system’s password AutoFill save your relay login, it is stored in your Apple Passwords under your control.</li>
+<li>A connection log with connection events and timings (no messages, passwords or server addresses), limited to about 512 KB. On a Mac, an optional link diagnostics log is written only when you choose Help › Save Link Pointer Diagnostics.</li>
+<li>Messages are not stored; they are kept in memory only while the app is connected.</li>
+</ul>
+<h3>Transmitted</h3>
+<ul>
+<li><strong>Your relay:</strong> the app connects to the relay address you enter, normally encrypted (<code>wss://</code>). Unencrypted <code>ws://</code> is meant only for relays on your local network. Your password is never sent in plain text; authentication uses PBKDF2. The app sends what you type and the commands needed to show your conversations.</li>
+<li><strong>Image upload (optional, off by default):</strong> images you send are uploaded to your own Nextcloud, ownCloud or WebDAV server, and a public link is created and posted in the conversation. Anyone with the link can see the image. PNG, JPEG, GIF and WebP files are uploaded unchanged, including embedded metadata such as the location where a photo was taken.</li>
+<li><strong>Link previews:</strong> unless you turn previews off in Settings, the app sends a short request to the server of each link shown in a conversation to find out whether it is an image. That server learns your IP address and the time of the request. Images are downloaded automatically only from your own upload server; other images load when you tap them.</li>
+<li>Links you tap open in your browser.</li>
+<li>The app contacts no other servers: no update check, no telemetry. The operators of your relay and IRC networks have their own privacy policies.</li>
+</ul>
+<h3>Other features</h3>
+<ul>
+<li><strong>Notifications</strong> are created on your device and show the sender or conversation name and the message text.</li>
+<li><strong>Reply suggestions</strong> (optional, off by default) are generated by Apple Intelligence on your device.</li>
+<li>The clipboard is read only when you paste.</li>
+<li><strong>Permissions:</strong> local network (to reach a relay at home) and notifications.</li>
+<li><strong>Demo mode</strong> shows built-in example conversations and makes no network connections.</li>
+</ul>
+<h3>Deleting your data</h3>
+<ul>
+<li>On iPad, deleting the app removes its settings. On a Mac, also delete <code>~/Library/Containers/me.bgrupe.WeeRelay</code>.</li>
+<li>Passwords can remain in the Keychain after the app is deleted. On a Mac you can remove them in the Keychain Access app (entries named <code>me.bgrupe.WeeRelay</code>).</li>
+</ul>
+
+<h2 id="rights">Your rights</h2>
+<p>Under the GDPR you have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object to processing based on legitimate interest (Art. 21). Write to the email address above. Because the apps send me no data, this usually concerns only our email correspondence.</p>
+<p>You also have the right to lodge a complaint with a data protection supervisory authority, in particular in the EU member state where you live.</p>
+
+<h2 id="changes">Children and changes</h2>
+<p>The apps are not directed at children and collect no data from anyone. When an app changes how it handles data, I update this page and the date at the top.</p>
+</main>
+<footer>
+<p><a href="../index.html">All apps</a> · <a href="support.html">Support</a> · <a href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a></p>
+</footer>
+</body>
+</html>

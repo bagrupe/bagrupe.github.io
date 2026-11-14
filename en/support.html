@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Apps by Bastian Grupe</title>
+<link rel="stylesheet" href="../site.css">
+<link rel="alternate" hreflang="de" href="../de/support.html">
+</head>
+<body>
+<header>
+<p class="lang"><a href="../de/support.html" hreflang="de" lang="de">Deutsch</a></p>
+<h1>Support</h1>
+<p class="meta">Apps by Bastian Grupe</p>
+</header>
+<main>
+<h2 id="contact">Contact</h2>
+<p>For questions, problems and suggestions, email <a href="mailto:bgrupe@gmail.com">bgrupe@gmail.com</a>. I develop these apps in my spare time and usually answer within a few days.</p>
+<p>Helpful details: the app and its version (shown in the About window or in Settings), your device and system version, what you did, and what happened. Describe data problems with invented examples. Please do not send health data, photos, exports, passwords or tokens unless I ask for them.</p>
+<p>Every app has a demo mode with invented data. It is a safe way to try things out and to show me a problem without your own data.</p>
+
+<nav class="toc" aria-label="Apps">
+<ul>
+<li><a href="#airportcontrol">AirportControl</a></li>
+<li><a href="#carmanager">CarManager</a></li>
+<li><a href="#healthmanager">HealthManager</a></li>
+<li><a href="#homemonitor">HomeMonitor</a></li>
+<li><a href="#silverbox">Silverbox</a></li>
+<li><a href="#weerelay">WeeRelay</a></li>
+</ul>
+</nav>
+
+<h2 id="airportcontrol">AirportControl</h2>
+<p>An arcade game for Mac, iPhone and iPad. Touch an aircraft and draw its route: jets land on the long red runway, propeller aircraft on the short yellow runway and helicopters on the blue helipad. A single collision ends the game.</p>
+<ul>
+<li>High scores are kept on the device and are not synced between devices.</li>
+<li>“Show approach guides” can be turned on and off in Settings.</li>
+</ul>
+<p><a href="privacy.html#airportcontrol">Privacy</a></p>
+
+<h2 id="carmanager">CarManager</h2>
+<p>A cost book for your vehicles on Mac, iPhone and iPad: fuel, tax, insurance, repairs and the purchase or lease, as cost per month and per kilometre.</p>
+<ul>
+<li><strong>Sync:</strong> sign in to the same iCloud account on all devices and make sure iCloud is enabled for CarManager. Settings shows the sync status. The first sync can take a few minutes.</li>
+<li><strong>Backup and transfer:</strong> Settings › Data Management exports all vehicles or the current one as a JSON file and imports such files again. When an imported vehicle has a licence plate that already exists, you choose whether to keep or replace it.</li>
+<li><strong>Siri and Shortcuts:</strong> “Show &lt;vehicle&gt; in CarManager” opens a vehicle.</li>
+</ul>
+<p><a href="privacy.html#carmanager">Privacy</a></p>
+
+<h2 id="healthmanager">HealthManager</h2>
+<p>Turns the Apple Health export from your iPhone into monthly and yearly comparisons on your Mac (macOS 27 or later, Apple silicon).</p>
+<ul>
+<li><strong>Getting started:</strong> in the Health app on your iPhone, export all health data, unzip the archive on your Mac and choose <code>export.xml</code> with Import XML (⌘O), or drop it into the window. ZIP files are not read directly.</li>
+<li>A comparison needs complete calendar periods before the newest record. Missing days or months are gaps, not zero.</li>
+<li>Sources can differ from the Health app, because its source priorities are not part of the export.</li>
+<li>If an import fails or is cancelled, your previous data remains. For storage errors, check the free disk space.</li>
+</ul>
+<p><a href="privacy.html#healthmanager">Privacy</a></p>
+
+<h2 id="homemonitor">HomeMonitor</h2>
+<p>Shows temperature, humidity, air quality and battery levels of your HomeKit home by room, warns when values cross your limits, and controls lights, thermostats, switches, speakers and scenes. Runs on iPhone, iPad and Mac.</p>
+<ul>
+<li><strong>HomeKit access:</strong> allow access to your home when asked. If you declined, enable it in the system settings under Privacy › HomeKit.</li>
+<li><strong>Home Assistant (optional):</strong> in Settings, enter your server address (preferably <code>https://</code>) and a long-lived access token created in your Home Assistant profile. Devices that exist in both systems are controlled through HomeKit.</li>
+<li><strong>Viessmann (optional):</strong> create a client ID in the Viessmann developer portal, enter it in Settings and sign in. “Disconnect” removes the sign-in.</li>
+<li><strong>Widget:</strong> add the HomeMonitor widget or the Favorite Scene control from the widget gallery or Control Center.</li>
+</ul>
+<p><a href="privacy.html#homemonitor">Privacy</a></p>
+
+<h2 id="silverbox">Silverbox</h2>
+<p>A photo catalog for the Mac that works with your own folders. Images stay where they are and are never changed.</p>
+<ul>
+<li><strong>Getting started:</strong> choose File › Add Folder. Silverbox watches the folder automatically. Try Demo in the app menu or Settings opens a sample catalog.</li>
+<li><strong>Working:</strong> G opens the grid, E the loupe, C compares the first two selected photos. Rate with 0–5 and flag with P, X or U.</li>
+<li><strong>Backup:</strong> File › Back Up Catalog exports your catalog metadata (no images). Restore Catalog reads a backup and keeps a safety copy of a readable current catalog. If folders are inaccessible after a restore, add them again to renew access.</li>
+<li><strong>Moved folders:</strong> reconnect a moved root folder with Relink Folder in its context menu and choose the complete folder tree.</li>
+</ul>
+<p><a href="privacy.html#silverbox">Privacy</a></p>
+
+<h2 id="weerelay">WeeRelay</h2>
+<p>A native Mac and iPad client for your own WeeChat relay. You need a WeeChat installation with the relay plugin enabled; see the <a href="https://weechat.org/doc/">WeeChat documentation</a>.</p>
+<ul>
+<li><strong>Without a relay:</strong> Explore Demo Mode on the connection screen shows example conversations.</li>
+<li><strong>Connecting:</strong> in Connection Settings, enter <code>host:port/path</code>, for example <code>relay.example.com:9001</code>. The app uses <code>wss://</code> (TLS) by default; plain <code>ws://</code> is meant for relays on your local network. Allow local network access when asked.</li>
+<li><strong>“Certificate not trusted”:</strong> the relay uses a self-signed certificate. You can trust it once; after that only this exact certificate is accepted. If you see “Certificate changed” and did not replace the certificate yourself, do not accept it.</li>
+<li><strong>Authentication fails:</strong> WeeRelay only uses PBKDF2 and needs a WeeChat version that supports <code>pbkdf2+sha512</code>. If the status stays on “Authenticating”, the password is probably wrong.</li>
+<li><strong>Nothing updates:</strong> WeeRelay reconnects on its own when a connection dies silently. On a Mac you can force it with Reconnect (⇧⌘R).</li>
+<li>iPhone is not supported.</li>
+</ul>
+<p><a href="privacy.html#weerelay">Privacy</a></p>
+</main>
+<footer>
+<p><a href="../index.html">All apps</a> · <a href="privacy.html">Privacy Policy</a> · <a href="../de/support.html" hreflang="de" lang="de">Deutsch</a></p>
+</footer>
+</body>
+</html>
